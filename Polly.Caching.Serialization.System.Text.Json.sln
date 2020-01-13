@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polly.Caching.Serialization.System.Text.Json", "src\Polly.Caching.Serialization.System.Text.Json\Polly.Caching.Serialization.System.Text.Json.csproj", "{C9D59F30-246F-4BA6-B999-1B51BC8FA304}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polly.Caching.Serialization.System.Text.Json.Specs", "src\Polly.Caching.Serialization.System.Text.Json.Specs\Polly.Caching.Serialization.System.Text.Json.Specs.csproj", "{645164C9-2513-4878-A141-4FA609576191}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9D59F30-246F-4BA6-B999-1B51BC8FA304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D59F30-246F-4BA6-B999-1B51BC8FA304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D59F30-246F-4BA6-B999-1B51BC8FA304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D59F30-246F-4BA6-B999-1B51BC8FA304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645164C9-2513-4878-A141-4FA609576191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645164C9-2513-4878-A141-4FA609576191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645164C9-2513-4878-A141-4FA609576191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645164C9-2513-4878-A141-4FA609576191}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A86A54F7-0C6A-4389-B16E-37CA68C24A9B}
+	EndGlobalSection
+EndGlobal
