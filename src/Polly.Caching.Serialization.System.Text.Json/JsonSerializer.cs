@@ -27,7 +27,7 @@ namespace Polly.Caching.Serialization.System.Text.Json
         /// <returns>The deserialized object</returns>
         public TResult Deserialize(string objectToDeserialize)
         {
-            return JsonSerializer.Deserialize<TResult>(objectToDeserialize);
+            return JsonSerializer.Deserialize<TResult>(objectToDeserialize, _jsonSerializerOptions);
         }
 
         /// <summary>
