@@ -1,29 +1,53 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <AssemblyName>Polly.Caching.Serialization.System.Text.Json</AssemblyName>
-    <AssemblyOriginatorKeyFile>..\Polly.snk</AssemblyOriginatorKeyFile>
-    <DefineConstants>TRACE;DEBUG;PORTABLE;NETCOREAPP3_0</DefineConstants>
-    <DefaultLanguage>en-US</DefaultLanguage>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <RootNamespace>Polly.Caching.Serialization.System.Text.Json</RootNamespace>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <NetStandardImplicitPackageVersion>2.0.0</NetStandardImplicitPackageVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugType>full</DebugType>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-  </PropertyGroup>
-  <ItemGroup>
-    <NuSpecFile Include="$(SolutionDir)Polly.Caching.Serialization.System.Text.Json.nuspec">
-      <Visible>False</Visible>
-    </NuSpecFile>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Polly" Version="7.2.0" />
-    <PackageReference Include="System.Text.Json" Version="4.7.0" />
-  </ItemGroup>
+	<PropertyGroup>
+		<AssemblyName>Polly.Caching.Serialization.System.Text.Json</AssemblyName>
+		<AssemblyOriginatorKeyFile>..\Polly.snk</AssemblyOriginatorKeyFile>
+		<DefineConstants>TRACE;DEBUG;PORTABLE;NETCOREAPP3_0</DefineConstants>
+		<DefaultLanguage>en-US</DefaultLanguage>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<RootNamespace>Polly.Caching.Serialization.System.Text.Json</RootNamespace>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<InformationalVersion>1.0.0.0</InformationalVersion>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Company>App vNext</Company>
+		<Copyright>Copyright (c) $([System.DateTime]::Now.ToString(yyyy)), App vNext</Copyright>
+		<Description>Polly.Caching.Serialization.System.Text.Json is a plug-in for the .NET OSS resilience library Polly, supporting serialization to and from Json using System.Text.Json</Description>
+		<Authors>Bryan Hogan, App vNext</Authors>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources> <!-- EmbedUntrackedSources for deterministic build -->
+		<ContinuousIntegrationBuild>false</ContinuousIntegrationBuild>
+		<NetStandardImplicitPackageVersion>2.0.0</NetStandardImplicitPackageVersion>
+	</PropertyGroup>
+	<PropertyGroup Label="SourceLink">
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+	<ItemGroup Label="SourceLink">
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+	</ItemGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+	</PropertyGroup>
+	<PropertyGroup Label="NuspecProperties">
+		<IconUrl>https://raw.github.com/App-vNext/Polly/master/Polly.png</IconUrl>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyTitle>Polly.Caching.Serialization.System.Text.Json</AssemblyTitle>
+		<PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/App-vNext/Polly.Caching.Serialization.System.Text.Json</PackageProjectUrl>
+		<PackageTags>Polly Cache Caching Cache-aside serialization Json</PackageTags>
+		<PackageReleaseNotes>See https://github.com/App-vNext/Polly.Caching.Serialization.System.Text.Json/blob/master/CHANGELOG.md for details</PackageReleaseNotes>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Polly" Version="7.2.0" />
+		<PackageReference Include="System.Text.Json" Version="4.7.0" />
+	</ItemGroup>
 </Project>
